@@ -12,6 +12,8 @@ function reactotronRedux(pluginConfig: PluginConfig = {}) {
     restoreActionType: pluginConfig.restoreActionType || DEFAULT_REPLACER_TYPE,
     onBackup: pluginConfig.onBackup || null,
     onRestore: pluginConfig.onRestore || null,
+    except: pluginConfig.except || null,
+    isActionImportant: pluginConfig.isActionImportant || null,
   }
 
   const storeCreationHandlers = []
