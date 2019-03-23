@@ -30,7 +30,8 @@
     "tsc": "tsc",
     "ci:test": "yarn test",
     "ci:publish": "yarn semantic-release",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "npm-run-all clean tsc compile",
   },
   "peerDependencies": {
     "reactotron-core-client": "^2.5.0",
