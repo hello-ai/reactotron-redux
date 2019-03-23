@@ -22,7 +22,7 @@ export default function createSendAction(reactotron: Reactotron) {
         }
 
     // off ya go!
-    reactotron.send("state.action.complete", { name, safeAction, ms }, important)
+    reactotron.send("state.action.complete", { name, action: safeAction, ms }, important)
   }
 }
 
